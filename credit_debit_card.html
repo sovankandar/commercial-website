@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkStore - credit & debit card</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./animated_sidebar.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        .toggle-checkbox:checked + .toggle-label .toggle-inner {
+            transform: translateX(24px);
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100">
+    <div class="flex h-screen overflow-hidden">
+        <!-- Sidebar -->
+        <div id="sidebar"
+            class="bg-sidebar-pattern text-white w-64 space-y-6 py-7 px-2 absolute inset-y-0 left-0 transform -translate-x-full md:relative md:translate-x-0 transition duration-200 ease-in-out z-20 overflow-y-auto">
+            <a href="#" class="text-white flex items-center space-x-2 px-4">
+                <span class="text-2xl font-extrabold">SkStore</span>
+            </a>
+
+            <nav>
+                <a href="./index.html"
+                    class="sidebar-item block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white opacity-0">
+                    Home
+                </a>
+                <a href="./card2.html"
+                    class="sidebar-item block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white opacity-0">
+                    Products
+                </a>
+                <a href="#"
+                    class="sidebar-item block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white opacity-0">
+                    Category
+                </a>
+                <a href="#"
+                    class="sidebar-item block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white opacity-0">
+                    Cart Products
+                </a>
+                <a href="#"
+                    class="sidebar-item block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white opacity-0">
+                    Top Rated
+                </a>
+                <a href="./messages.html"
+                    class="sidebar-item block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white opacity-0">
+                    Messages
+                </a>
+                <a href="./report.html"
+                    class="sidebar-item block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white opacity-0">
+                    Reports
+                </a>
+            </nav>
+            <a href="#" class="text-white flex items-center space-x-2 px-5"></a>
+
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            <span class="text-2xl font-extrabold">Money & Banking</span>
+            </a>
+            <nav>
+                <a href="./bank_link.html"
+                    class="sidebar-item block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white opacity-0">
+                    Bank Link
+                </a>
+                <a href="./payment.html"
+                    class="sidebar-item block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white opacity-0">
+                    UPI / Online
+                </a>
+                <a href="#"
+                    class="sidebar-item block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white opacity-0">
+                    Pending Transaction
+                </a>
+                <a href="#"
+                    class="sidebar-item block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white opacity-0">
+                    Transaction History
+                </a>
+                <a href="#"
+                    class="sidebar-item block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white opacity-0">
+                    CashBack
+                </a>
+                <a href="#"
+                    class="sidebar-item block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white opacity-0">
+                    Reward
+                </a>
+
+            </nav>
+
+            <a href="#" class="text-white flex items-center space-x-2 px-5"></a>
+
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            <span class="text-2xl font-extrabold">Interaction</span>
+            </a>
+            <nav>
+                <a href="#"
+                    class="sidebar-item block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white opacity-0">
+                    Help & Settings
+                </a>
+                <a href="#"
+                    class="sidebar-item block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white opacity-0">
+                    Staff Rating & Attendence
+                </a>
+                <a href="#"
+                    class="sidebar-item block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white opacity-0">
+                    About us
+                </a>
+                <a href="#"
+                    class="sidebar-item block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white opacity-0">
+                    Contact Us
+                </a>
+                <a href="#"
+                    class="sidebar-item block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white opacity-0">
+                    Settings
+                </a>
+                <a href="#"
+                    class="sidebar-item block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white opacity-0">
+                    Log Out
+                </a>
+            </nav>
+
+            <!-- Close button for mobile -->
+            <button id="sidebarClose" class="absolute top-0 right-0 mt-4 mr-4 text-white md:hidden">
+                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+        </div>
+
+        <!-- Main Content -->
+        <div class="flex-1 flex flex-col overflow-hidden bg-pattern">
+            <!-- Top bar -->
+            <header class="flex justify-between items-center py-4 px-6 bg-white border-b-4 border-gray-200">
+                <div class="flex items-center">
+                    <button id="sidebarToggle" class="text-gray-500 focus:outline-none lg:hidden">
+                        <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 6H20M4 12H20M4 18H11" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="flex items-center">
+                    <div class="relative">
+                        <button
+                            class="flex text-sm border-2 border-transparent rounded-full focus:outline-none focus:border-gray-300 transition duration-150 ease-in-out">
+                            <img class="h-8 w-8 rounded-full"
+                                src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                                alt="User avatar">
+                        </button>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Main content -->
+            <main class="flex-1 overflow-x-hidden overflow-y-auto bg-gray-100">
+                <div class="container mx-auto px-6">
+
+                    <div class="bg-gray-100 flex items-center justify-center min-h-screen p-4">
+                      
+                        <div class="bg-white p-8 rounded-lg shadow-md w-full max-w-md">
+                            <h2 class="text-2xl font-bold mb-6 text-center">Card Details</h2>
+                            
+                            <!-- Toggle Switch -->
+                            <div class="flex items-center justify-center mb-6">
+                                <span class="mr-3 text-sm font-medium text-gray-900">Debit</span>
+                                <div class="relative inline-block w-12 mr-3 align-middle select-none transition duration-200 ease-in">
+                                    <input type="checkbox" name="toggle" id="toggle" class="toggle-checkbox absolute block w-6 h-6 rounded-full bg-white border-4 appearance-none cursor-pointer"/>
+                                    <label for="toggle" class="toggle-label block overflow-hidden h-6 rounded-full bg-gray-300 cursor-pointer">
+                                        <span class="toggle-inner absolute block w-6 h-6 rounded-full bg-white shadow transform transition-transform duration-300 ease-in-out"></span>
+                                    </label>
+                                </div>
+                                <span class="text-sm font-medium text-gray-900">Credit</span>
+                            </div>
+                    
+                            <!-- Card Interface -->
+                            <div id="card-interface" class="bg-gradient-to-r from-purple-500 to-pink-500 p-6 rounded-lg shadow-lg mb-6 text-white">
+                                <div class="flex justify-between items-start mb-4">
+                                    <div>
+                                        <p class="text-sm opacity-80">Card Type</p>
+                                        <p id="card-type" class="text-lg font-semibold">Debit Card</p>
+                                    </div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" />
+                                    </svg>
+                                </div>
+                                <div class="mb-4">
+                                    <p class="text-sm opacity-80">Card Number</p>
+                                    <p class="text-lg font-semibold tracking-wider" id="Number"></p>
+                                </div>
+                                <div class="flex justify-between">
+                                    <div>
+                                        <p class="text-sm opacity-80">Card Holder</p>
+                                        <p class="font-semibold" id="name"></p>
+                                    </div>
+                                    <div>
+                                        <p class="text-sm opacity-80">Expires</p>
+                                        <p class="font-semibold" id="expire"></p>
+                                    </div>
+                                </div>
+                            </div>
+                    
+                            <!-- Form -->
+                            <form>
+                                <div class="mb-4">
+                                    <label for="card-number" class="block text-sm font-medium text-gray-700 mb-1">Card Number</label>
+                                    <input type="text" id="card-number" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="1234 5678 9012 3456" required>
+                                </div>
+                                <div class="mb-4">
+                                    <label for="card-holder" class="block text-sm font-medium text-gray-700 mb-1">Card Holder Name</label>
+                                    <input type="text" id="card-holder" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="John Doe" required>
+                                </div>
+                                <div class="flex mb-4">
+                                    <div class="w-1/2 mr-2">
+                                        <label for="expiry" class="block text-sm font-medium text-gray-700 mb-1">Expiry Date</label>
+                                        <input type="text" id="expiry" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="MM/YY" required>
+                                    </div>
+                                    <div class="w-1/2 ml-2">
+                                        <label for="cvv" class="block text-sm font-medium text-gray-700 mb-1">CVV</label>
+                                        <input type="text" id="cvv" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="123" required>
+                                    </div>
+                                </div>
+                                <button type="submit" class="w-full bg-blue-500 text-white px-4 py-2 rounded-md font-semibold hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">Submit</button>
+                            </form>
+                        </div>
+                    
+                        <script>
+                            document.addEventListener('DOMContentLoaded', () => {
+                                const toggle = document.getElementById('toggle');
+                                const cardType = document.getElementById('card-type');
+                                const cardInterface = document.getElementById('card-interface');
+                    
+                                toggle.addEventListener('change', () => {
+                                    if (toggle.checked) {
+                                        gsap.to(cardType, {
+                                            opacity: 0,
+                                            y: -10,
+                                            duration: 0.3,
+                                            onComplete: () => {
+                                                cardType.textContent = 'Credit Card';
+                                                gsap.to(cardType, {
+                                                    opacity: 1,
+                                                    y: 0,
+                                                    duration: 0.3
+                                                });
+                                            }
+                                        });
+                    
+                                        gsap.to(cardInterface, {
+                                            backgroundColor: '#4338ca',
+                                            duration: 0.5
+                                        });
+                                    } else {
+                                        gsap.to(cardType, {
+                                            opacity: 0,
+                                            y: -10,
+                                            duration: 0.3,
+                                            onComplete: () => {
+                                                cardType.textContent = 'Debit Card';
+                                                gsap.to(cardType, {
+                                                    opacity: 1,
+                                                    y: 0,
+                                                    duration: 0.3
+                                                });
+                                            }
+                                        });
+                    
+                                        gsap.to(cardInterface, {
+                                            backgroundColor: '#8b5cf6',
+                                            duration: 0.5
+                                        });
+                                    }
+                                });
+                    
+                                // Initial animation
+                                gsap.from(cardInterface, {
+                                    y: 20,
+                                    opacity: 0,
+                                    duration: 0.5,
+                                    ease: 'back.out(1.7)'
+                                });
+                    
+                                gsap.from('form', {
+                                    y: 20,
+                                    opacity: 0,
+                                    duration: 0.5,
+                                    delay: 0.2,
+                                    ease: 'back.out(1.7)'
+                                });
+                            });
+                    
+                            const card_number=document.getElementById("card-number");
+                            const card_display=document.getElementById("Number");
+                            card_number.addEventListener('input', function() {
+                        // Display the input value in the card element
+                        card_display.textContent = card_number.value;
+                    });
+                    
+                    const card_holder=document.getElementById("card-holder");
+                    const card_holder_display=document.getElementById("name");
+                    card_holder.addEventListener('input', function() {
+                        // Display the input value in the card element
+                        card_holder_display.textContent = card_holder.value;
+                    });
+                    
+                    const expiry=document.getElementById("expiry");
+                    const expire=document.getElementById("expire");
+                    
+                    expiry.addEventListener('input', function() {
+                        // Display the input value in the card element
+                        expire.textContent = expiry.value;
+                    });
+                        </script>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>

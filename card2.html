@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkStore - Products</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./animated_sidebar.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+</head>
+
+<body class="bg-gray-100">
+    <div class="flex h-screen overflow-hidden">
+        <!-- Sidebar -->
+        <div id="sidebar"
+            class="bg-sidebar-pattern text-white w-64 space-y-6 py-7 px-2 absolute inset-y-0 left-0 transform -translate-x-full md:relative md:translate-x-0 transition duration-200 ease-in-out z-20 overflow-y-auto">
+            <a href="#" class="text-white flex items-center space-x-2 px-4">
+                <span class="text-2xl font-extrabold">SkStore</span>
+            </a>
+
+            <nav>
+                <a href="./animated_sidebar.html"
+                    class="sidebar-item block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white opacity-0">
+                    Home
+                </a>
+                <a href="./card2.html"
+                    class="sidebar-item block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white opacity-0">
+                    Products
+                </a>
+                <a href="#"
+                    class="sidebar-item block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white opacity-0">
+                    Category
+                </a>
+                <a href="#"
+                    class="sidebar-item block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white opacity-0">
+                    Cart Products
+                </a>
+                <a href="#"
+                    class="sidebar-item block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white opacity-0">
+                    Top Rated
+                </a>
+                <a href="./messages.html"
+                    class="sidebar-item block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white opacity-0">
+                    Messages
+                </a>
+                <a href="./report.html"
+                    class="sidebar-item block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white opacity-0">
+                    Reports
+                </a>
+            </nav>
+            <a href="#" class="text-white flex items-center space-x-2 px-5"></a>
+
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            <span class="text-2xl font-extrabold">Money & Banking</span>
+            </a>
+            <nav>
+                <a href="./bank_link.html"
+                    class="sidebar-item block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white opacity-0">
+                    Bank Link
+                </a>
+                <a href="./payment.html"
+                    class="sidebar-item block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white opacity-0">
+                    UPI / Online
+                </a>
+                <a href="#"
+                    class="sidebar-item block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white opacity-0">
+                    Pending Transaction
+                </a>
+                <a href="#"
+                    class="sidebar-item block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white opacity-0">
+                    Transaction History
+                </a>
+                <a href="#"
+                    class="sidebar-item block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white opacity-0">
+                    CashBack
+                </a>
+                <a href="#"
+                    class="sidebar-item block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white opacity-0">
+                    Reward
+                </a>
+
+            </nav>
+
+            <a href="#" class="text-white flex items-center space-x-2 px-5"></a>
+
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            <span class="text-2xl font-extrabold">Interaction</span>
+            </a>
+            <nav>
+                <a href="#"
+                    class="sidebar-item block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white opacity-0">
+                    Help & Settings
+                </a>
+                <a href="#"
+                    class="sidebar-item block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white opacity-0">
+                    Staff Rating & Attendence
+                </a>
+                <a href="#"
+                    class="sidebar-item block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white opacity-0">
+                    About us
+                </a>
+                <a href="#"
+                    class="sidebar-item block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white opacity-0">
+                    Contact Us
+                </a>
+                <a href="#"
+                    class="sidebar-item block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white opacity-0">
+                    Settings
+                </a>
+                <a href="#"
+                    class="sidebar-item block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white opacity-0">
+                    Log Out
+                </a>
+            </nav>
+
+            <!-- Close button for mobile -->
+            <button id="sidebarClose" class="absolute top-0 right-0 mt-4 mr-4 text-white md:hidden">
+                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+        </div>
+
+        <!-- Main Content -->
+        <div class="flex-1 flex flex-col overflow-hidden bg-pattern">
+            <!-- Top bar -->
+            <header class="flex justify-between items-center py-4 px-6 bg-white border-b-4 border-gray-200">
+                <div class="flex items-center">
+                    <button id="sidebarToggle" class="text-gray-500 focus:outline-none lg:hidden">
+                        <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 6H20M4 12H20M4 18H11" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="flex items-center">
+                    <div class="relative">
+                        <button
+                            class="flex text-sm border-2 border-transparent rounded-full focus:outline-none focus:border-gray-300 transition duration-150 ease-in-out">
+                            <img class="h-8 w-8 rounded-full"
+                                src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                                alt="User avatar">
+                        </button>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Main content -->
+            <main class="flex-1 overflow-x-hidden overflow-y-auto bg-gray-100">
+                <div class="container mx-auto px-6 py-8">
+                    <h1 class="text-4xl font-bold text-left mb-8 text-gray-800">Products</h1>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <!-- Product Card 1 -->
+                        <div
+                            class="product-card bg-white rounded-lg shadow-lg overflow-hidden transform transition-all duration-300">
+                            <img src="https://everysolutions.co.in/wp-content/uploads/2021/06/71HpOiAllL._SL1500_.jpg"
+                                alt="Product 1" class="min-w-full h-48 object-cover">
+                            <div class="p-4">
+                                <h2 class="text-xl font-semibold mb-2">Boat Airbuds 131 Twin</h2>
+                                <p class="text-gray-600 mb-4">High-quality sound with long battery life.</p>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-2xl font-bold text-blue-600">$99.99</span>
+                                    <button
+                                        class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition-colors duration-300 flex items-center" href="./payment.html">
+                                        <i class="fas fa-shopping-cart mr-2"></i>
+                                        Buy Now
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Product Card 2 -->
+                        <div
+                            class="product-card bg-white rounded-lg shadow-lg overflow-hidden transform transition-all duration-300">
+                            <img src="https://images.samsung.com/ph/galaxy-watch6/feature/galaxy-watch6-kv-pc.jpg"
+                                alt="Product 2" class="w-full h-48 object-cover">
+                            <div class="p-4">
+                                <h2 class="text-xl font-semibold mb-2">Samsung Galaxy-Watch6</h2>
+                                <p class="text-gray-600 mb-4">Track your fitness and stay connected.</p>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-2xl font-bold text-blue-600">$199.99</span>
+                                    <button
+                                        class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition-colors duration-300 flex items-center">
+                                        <i class="fas fa-shopping-cart mr-2"></i>
+                                        Buy Now
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Product Card 3 -->
+                        <div
+                            class="product-card bg-white rounded-lg shadow-lg overflow-hidden transform transition-all duration-300">
+                            <img src="https://oasis.opstatics.com/content/dam/oasis/page/product/accessories/power---cables/8t/power-bank/Power-Bank_A_in_medium.jpg"
+                                alt="Product 3" class="w-full h-48 object-cover">
+                            <div class="p-4">
+                                <h2 class="text-xl font-semibold mb-2">OnePlus Powerbank</h2>
+                                <p class="text-gray-600 mb-4">Immersive charging capacity for extra battery life.</p>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-2xl font-bold text-blue-600">$249.99</span>
+                                    <button
+                                        class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition-colors duration-300 flex items-center">
+                                        <i class="fas fa-shopping-cart mr-2"></i>
+                                        Buy Now
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--product card 4-->
+                        <div
+                            class="product-card bg-white rounded-lg shadow-lg overflow-hidden transform transition-all duration-300">
+                            <img src="https://images.hindustantimes.com/tech/rf/image_size_960x540/HT/p2/2020/02/01/Pictures/_f30890b2-44db-11ea-bfa0-35d85fc987f6.jpg"
+                                alt="Product 3" class="w-full h-48 object-cover">
+                            <div class="p-4">
+                                <h2 class="text-xl font-semibold mb-2">Realme Portable Charger</h2>
+                                <p class="text-gray-600 mb-4">Immersive charging capacity for extra battery life.</p>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-2xl font-bold text-blue-600">$249.99</span>
+                                    <button
+                                        class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition-colors duration-300 flex items-center">
+                                        <i class="fas fa-shopping-cart mr-2"></i>
+                                        Buy Now
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--product card 5-->
+                        <div
+                            class="product-card bg-white rounded-lg shadow-lg overflow-hidden transform transition-all duration-300">
+                            <img src="https://th.bing.com/th/id/OIP.ztojTHk4p-puR5JF6aTpPAHaFj?rs=1&pid=ImgDetMain"
+                                alt="Product 3" class="w-full h-48 object-cover">
+                            <div class="p-4">
+                                <h2 class="text-xl font-semibold mb-2">Marshall Bluetooth Speaker</h2>
+                                <p class="text-gray-600 mb-4">Immersive charging capacity for extra battery life.</p>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-2xl font-bold text-blue-600">$249.99</span>
+                                    <button
+                                        class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition-colors duration-300 flex items-center">
+                                        <i class="fas fa-shopping-cart mr-2"></i>
+                                        Buy Now
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--product card 6-->
+                        <div
+                            class="product-card bg-white rounded-lg shadow-lg overflow-hidden transform transition-all duration-300">
+                            <img src="https://th.bing.com/th/id/R.72a92c2d1a384f7162cc1bcc2535faf5?rik=oicKvLUvwpvIhg&riu=http%3a%2f%2fmacandegg.de%2fwp-content%2fuploads%2f2017%2f01%2fmatias-Wireless-Keyboard-backlight-dark.jpg&ehk=YqdOOnjJ8t8PvzY7rF75jRxiES%2fsRAN%2fwiwyN1rB8Mc%3d&risl=&pid=ImgRaw&r=0"
+                                alt="Product 3" class="w-full h-48 object-cover">
+                            <div class="p-4">
+                                <h2 class="text-xl font-semibold mb-2">Matias Wireless Keyboard</h2>
+                                <p class="text-gray-600 mb-4">Immersive charging capacity for extra battery life.</p>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-2xl font-bold text-blue-600">$249.99</span>
+                                    <button
+                                        class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition-colors duration-300 flex items-center">
+                                        <i class="fas fa-shopping-cart mr-2"></i>
+                                        Buy Now
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--product card 7-->
+                        <div
+                            class="product-card bg-white rounded-lg shadow-lg overflow-hidden transform transition-all duration-300">
+                            <img src="https://th.bing.com/th/id/R.251ee8dd10e0ddb5be47084868301706?rik=OS4H4a4OeGmAIw&riu=http%3a%2f%2fwww.tennisnuts.com%2fimages%2fproduct%2ffull%2fNike-LunarGlide-6-Womens-Running-Shoe-654434_603_G_PREM.jpg&ehk=p98RXNMNA3OgEz8BUpeeNog9yOnL%2fOSCL9gyFtk1VcM%3d&risl=&pid=ImgRaw&r=0"
+                                alt="Product 3" class="w-full h-48 object-cover">
+                            <div class="p-4">
+                                <h2 class="text-xl font-semibold mb-2">Nike comfort Shoe for Women</h2>
+                                <p class="text-gray-600 mb-4">Immersive charging capacity for extra battery life.</p>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-2xl font-bold text-blue-600">$249.99</span>
+                                    <button
+                                        class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition-colors duration-300 flex items-center">
+                                        <i class="fas fa-shopping-cart mr-2"></i>
+                                        Buy Now
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--product card 8-->
+                        <div
+                            class="product-card bg-white rounded-lg shadow-lg overflow-hidden transform transition-all duration-300">
+                            <img src="https://th.bing.com/th/id/R.509318869471089a09df943d169e1c1a?rik=fDUNhVKqRQ3DKw&riu=http%3a%2f%2fwallpapercave.com%2fwp%2fJGwAprF.jpg&ehk=Fgk7R7fqIYM78QkPIqb0Z%2fLL7HN30YNvgF2Eo1pfB2s%3d&risl=&pid=ImgRaw&r=0"
+                                alt="Product 3" class="w-full h-48 object-cover">
+                            <div class="p-4">
+                                <h2 class="text-xl font-semibold mb-2">Nike Green</h2>
+                                <p class="text-gray-600 mb-4">Immersive charging capacity for extra battery life.</p>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-2xl font-bold text-blue-600">$249.99</span>
+                                    <button
+                                        class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition-colors duration-300 flex items-center">
+                                        <i class="fas fa-shopping-cart mr-2"></i>
+                                        Buy Now
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--product card 9-->
+                        <div
+                            class="product-card bg-white rounded-lg shadow-lg overflow-hidden transform transition-all duration-300">
+                            <img src="https://th.bing.com/th/id/R.63bb611cf511fd604dd6b5cb7bcbcc23?rik=E8ov2QAILw%2bAfw&riu=http%3a%2f%2fwallpapercave.com%2fwp%2ftjeKBs2.jpg&ehk=6rhUYwTn8J9n5nX1oADbKnVyGedq7Q6lgD45H3Taz6I%3d&risl=&pid=ImgRaw&r=0"
+                                alt="Product 3" class="w-full h-48 object-cover">
+                            <div class="p-4">
+                                <h2 class="text-xl font-semibold mb-2">Air Jordan </h2>
+                                <p class="text-gray-600 mb-4">Immersive charging capacity for extra battery life.</p>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-2xl font-bold text-blue-600">$249.99</span>
+                                    <button
+                                        class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition-colors duration-300 flex items-center">
+                                        <i class="fas fa-shopping-cart mr-2"></i>
+                                        Buy Now
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--product card 10-->
+                        <div
+                            class="product-card bg-white rounded-lg shadow-lg overflow-hidden transform transition-all duration-300">
+                            <img src="https://wallpapers.com/images/hd/puma-shoes-ignite-sld7hbq8kbzdez2a.jpg"
+                                alt="Product 3" class="w-full h-48 object-cover">
+                            <div class="p-4">
+                                <h2 class="text-xl font-semibold mb-2">Puma Men shoes</h2>
+                                <p class="text-gray-600 mb-4">Immersive charging capacity for extra battery life.</p>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-2xl font-bold text-blue-600">$249.99</span>
+                                    <button
+                                        class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition-colors duration-300 flex items-center">
+                                        <i class="fas fa-shopping-cart mr-2"></i>
+                                        Buy Now
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--product card 11-->
+                        <div
+                            class="product-card bg-white rounded-lg shadow-lg overflow-hidden transform transition-all duration-300">
+                            <img src="https://th.bing.com/th/id/OIP.x-fL60ZuR6JobaE7yFxjxAHaEo?rs=1&pid=ImgDetMain"
+                                alt="Product 3" class="w-full h-48 object-cover">
+                            <div class="p-4">
+                                <h2 class="text-xl font-semibold mb-2">Puma Sport Shoes</h2>
+                                <p class="text-gray-600 mb-4">Immersive charging capacity for extra battery life.</p>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-2xl font-bold text-blue-600">$249.99</span>
+                                    <button
+                                        class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition-colors duration-300 flex items-center">
+                                        <i class="fas fa-shopping-cart mr-2"></i>
+                                        Buy Now
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--product card 12-->
+                        <div
+                            class="product-card bg-white rounded-lg shadow-lg overflow-hidden transform transition-all duration-300">
+                            <img src="https://images.unsplash.com/photo-1518002171953-a080ee817e1f?ixlib=rb-1.2.1&w=1000&q=80"
+                                alt="Product 3" class="w-full h-48 object-cover">
+                            <div class="p-4">
+                                <h2 class="text-xl font-semibold mb-2">Adidas Men Power</h2>
+                                <p class="text-gray-600 mb-4">Immersive charging capacity for extra battery life.</p>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-2xl font-bold text-blue-600">$249.99</span>
+                                    <button
+                                        class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition-colors duration-300 flex items-center">
+                                        <i class="fas fa-shopping-cart mr-2"></i>
+                                        Buy Now
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--product card 13-->
+                        <div
+                            class="product-card bg-white rounded-lg shadow-lg overflow-hidden transform transition-all duration-300">
+                            <img src="https://www.gizmochina.com/wp-content/uploads/2024/09/Realme-Pad-2-Lite.png"
+                                alt="Product 3" class="w-full h-48 object-cover">
+                            <div class="p-4">
+                                <h2 class="text-xl font-semibold mb-2">Realme Pad 2 Lite</h2>
+                                <p class="text-gray-600 mb-4">Immersive charging capacity for extra battery life.</p>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-2xl font-bold text-blue-600">$249.99</span>
+                                    <button
+                                        class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition-colors duration-300 flex items-center">
+                                        <i class="fas fa-shopping-cart mr-2"></i>
+                                        Buy Now
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--product card 14-->
+                        <div
+                            class="product-card bg-white rounded-lg shadow-lg overflow-hidden transform transition-all duration-300">
+                            <img src="https://sm.mashable.com/mashable_in/seo/default/honor-magic-4-and-honor-magic-4-pro-goes-official-globally_dqx3.jpg"
+                                alt="Product 3" class="w-full h-48 object-cover">
+                            <div class="p-4">
+                                <h2 class="text-xl font-semibold mb-2">Honor Magic 4 and pro</h2>
+                                <p class="text-gray-600 mb-4">Immersive charging capacity for extra battery life.</p>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-2xl font-bold text-blue-600">$249.99</span>
+                                    <button
+                                        class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition-colors duration-300 flex items-center">
+                                        <i class="fas fa-shopping-cart mr-2"></i>
+                                        Buy Now
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--product card 15-->
+                        <div
+                            class="product-card bg-white rounded-lg shadow-lg overflow-hidden transform transition-all duration-300">
+                            <img src="https://www.alezay.com/wp-content/uploads/2023/04/XIAOMI-13-ULTRA-WEBSITE-BANNER-ALEZAY-KUWAIT.jpg"
+                                alt="Product 3" class="w-full h-48 object-cover">
+                            <div class="p-4">
+                                <h2 class="text-xl font-semibold mb-2">Xiaomi 13 Ultra</h2>
+                                <p class="text-gray-600 mb-4">Immersive charging capacity for extra battery life.</p>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-2xl font-bold text-blue-600">$249.99</span>
+                                    <button
+                                        class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition-colors duration-300 flex items-center">
+                                        <i class="fas fa-shopping-cart mr-2"></i>
+                                        Buy Now
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--product card 16-->
+                        <div
+                            class="product-card bg-white rounded-lg shadow-lg overflow-hidden transform transition-all duration-300">
+                            <img src="https://universosamsung.com/wp-content/uploads/2024/04/galaxy-s24fe.jpg"
+                                alt="Product 3" class="w-full h-48 object-cover">
+                            <div class="p-4">
+                                <h2 class="text-xl font-semibold mb-2">Galaxy S24 FE</h2>
+                                <p class="text-gray-600 mb-4">Immersive charging capacity for extra battery life.</p>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-2xl font-bold text-blue-600">$249.99</span>
+                                    <button
+                                        class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition-colors duration-300 flex items-center">
+                                        <i class="fas fa-shopping-cart mr-2"></i>
+                                        Buy Now
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
