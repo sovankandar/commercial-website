@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Earbuds Webpage</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <style>
+        .clip-circle {
+            clip-path: circle(50% at 50% 50%);
+        }
+        .carousel-item {
+            display: none;
+        }
+        .carousel-item.active {
+            display: block;
+        }
+        .product-cards-container {
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            -webkit-overflow-scrolling: touch;
+        }
+        .product-card {
+            scroll-snap-align: start;
+        }
+        #floating-image {
+            position: fixed;
+            z-index: 1000;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-b from-blue-100 to-white min-h-screen">
+    <div id="floating-image" class="w-64 h-64">
+        <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/f3fe20ca-bf8c-481d-b481-5875f24981b9_1024x1024.png?v=1625157825?height=100&width=100" alt="Floating Earbuds" class="w-full h-full object-contain">
+    </div>
+    <div class="container mx-auto px-4">
+        <section id="hero" class="h-screen flex flex-col justify-center items-center relative">
+            <div id="carousel" class="w-full max-w-lg h-80 relative">
+                <div class="carousel-item active">
+                    <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Airdopes_Zing_2.1.png?v=1687426997?height=300&width=300" alt="Earbuds Model A" class="w-full h-full object-contain">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://media.croma.com/image/upload/v1689071474/Croma%20Assets/Entertainment/Wireless%20Earbuds/Images/274317_ctvf5u.png?height=300&width=300" alt="Earbuds Model B" class="w-full h-full object-contain">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/22_c9eff27c-bc73-4ca0-86e9-272d5e0204c8.png?v=1626871175?height=300&width=300" alt="Earbuds Model C" class="w-full h-full object-contain">
+                </div>
+                <button id="prevBtn" class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-50 p-2 rounded-full">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                    </svg>
+                </button>
+                <button id="nextBtn" class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-50 p-2 rounded-full">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                    </svg>
+                </button>
+            </div>
+            <h1 class="text-4xl md:text-6xl font-bold text-center mt-8">Experience Pure Sound</h1>
+            <p class="text-xl text-center mt-4 max-w-md">Immerse yourself in crystal-clear audio with our premium earbuds.</p>
+        </section>
+
+        <section id="product-cards" class="py-20">
+            <h2 class="text-3xl font-bold mb-8 text-center">Our Products</h2>
+            <div class="product-cards-container flex space-x-6 pb-6">
+                <div class="product-card flex-shrink-0 w-80 bg-white rounded-lg shadow-lg p-6">
+                    <h3 class="text-xl font-bold mb-2">Premium Earbuds A</h3>
+                    <div class="w-full h-48 relative overflow-hidden rounded-lg shadow-lg mb-4">
+                        <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/f3fe20ca-bf8c-481d-b481-5875f24981b9_1024x1024.png?v=1625157825?height=200&width=200" alt="Earbuds A" class="w-full h-full object-cover">
+                    </div>
+                    <p class="text-gray-600 mb-4">Unparalleled sound quality and comfort</p>
+                    <button class="w-full bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700 transition duration-300">Buy Now</button>
+                </div>
+                <div class="product-card flex-shrink-0 w-80 bg-white rounded-lg shadow-lg p-6">
+                    <h3 class="text-xl font-bold mb-2">Premium Earbuds B</h3>
+                    <div class="w-full h-48 relative overflow-hidden rounded-lg shadow-lg mb-4">
+                        <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Airdopes_Zing_2.1.png?v=1687426997?height=200&width=200" alt="Earbuds B" class="w-full h-full object-cover">
+                    </div>
+                    <p class="text-gray-600 mb-4">Superior bass and noise cancellation</p>
+                    <button class="w-full bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700 transition duration-300">Buy Now</button>
+                </div>
+                <div class="product-card flex-shrink-0 w-80 bg-white rounded-lg shadow-lg p-6">
+                    <h3 class="text-xl font-bold mb-2">Premium Earbuds C</h3>
+                    <div class="w-full h-48 relative overflow-hidden rounded-lg shadow-lg mb-4">
+                        <img src="https://media.croma.com/image/upload/v1689071474/Croma%20Assets/Entertainment/Wireless%20Earbuds/Images/274317_ctvf5u.png?height=200&width=200" alt="Earbuds C" class="w-full h-full object-cover">
+                    </div>
+                    <p class="text-gray-600 mb-4">Longest battery life in the market</p>
+                    <button class="w-full bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700 transition duration-300">Buy Now</button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+
+        // Carousel functionality
+        const carousel = document.getElementById('carousel');
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+        const slides = carousel.querySelectorAll('.carousel-item');
+        let currentSlide = 0;
+
+        function showSlide(index) {
+            slides[currentSlide].classList.remove('active');
+            slides[index].classList.add('active');
+            currentSlide = index;
+        }
+
+        prevBtn.addEventListener('click', () => {
+            let index = (currentSlide - 1 + slides.length) % slides.length;
+            showSlide(index);
+        });
+
+        nextBtn.addEventListener('click', () => {
+            let index = (currentSlide + 1) % slides.length;
+            showSlide(index);
+        });
+
+        // Floating image animation
+        const floatingImage = document.getElementById('floating-image');
+        const productCards = document.querySelector('.product-cards-container');
+        const firstProductCard = productCards.querySelector('.product-card');
+
+        gsap.set(floatingImage, { 
+            x: window.innerWidth / 2 - floatingImage.offsetWidth / 2,
+            y: window.innerHeight / 2 - floatingImage.offsetHeight / 2
+        });
+
+        gsap.to(floatingImage, {
+            x: () => firstProductCard.offsetLeft + firstProductCard.offsetWidth / 2 - floatingImage.offsetWidth / 2,
+            y: () => window.innerHeight + productCards.offsetTop + firstProductCard.offsetHeight / 2 - floatingImage.offsetHeight / 2,
+            scale: 0.5,
+            scrollTrigger: {
+                trigger: productCards,
+                start: "top bottom",
+                end: "center center",
+                scrub: true,
+                onEnter: () => {
+                    gsap.to(floatingImage, { opacity: 1, duration: 0.5 });
+                },
+                onLeave: () => {
+                    gsap.to(floatingImage, { opacity: 0, duration: 0.5 });
+                },
+                onEnterBack: () => {
+                    gsap.to(floatingImage, { opacity: 1, duration: 0.5 });
+                },
+                onLeaveBack: () => {
+                    gsap.to(floatingImage, { opacity: 0, duration: 0.5 });
+                }
+            }
+        });
+
+        // Product cards animation
+        const productCardsList = document.querySelectorAll('.product-card');
+
+        productCardsList.forEach((card, index) => {
+            gsap.from(card, {
+                x: -100,
+                opacity: 0,
+                duration: 1,
+                scrollTrigger: {
+                    trigger: card,
+                    start: "top bottom",
+                    end: "center center",
+                    scrub: true,
+                    toggleActions: "play none none reverse"
+                }
+            });
+        });
+
+        // Ensure animations work on resize
+        window.addEventListener('resize', () => {
+            ScrollTrigger.refresh();
+        });
+    </script>
+</body>
+</html>

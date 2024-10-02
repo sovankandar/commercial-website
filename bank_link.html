@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkStore - Messages</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./animated_sidebar.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+       
+    </style>
+</head>
+
+<body class="bg-gray-100">
+    <div class="flex h-screen overflow-hidden">
+        <!-- Sidebar -->
+        <div id="sidebar"
+            class="bg-sidebar-pattern text-white w-64 space-y-6 py-7 px-2 absolute inset-y-0 left-0 transform -translate-x-full md:relative md:translate-x-0 transition duration-200 ease-in-out z-20 overflow-y-auto">
+            <a href="#" class="text-white flex items-center space-x-2 px-4">
+                <span class="text-2xl font-extrabold">SkStore</span>
+            </a>
+
+            <nav>
+                <a href="./index.html"
+                    class="sidebar-item block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white opacity-0">
+                    Home
+                </a>
+                <a href="./card2.html"
+                    class="sidebar-item block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white opacity-0">
+                    Products
+                </a>
+                <a href="./category.html"
+                    class="sidebar-item block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white opacity-0">
+                    Category
+                </a>
+                <a href="#"
+                    class="sidebar-item block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white opacity-0">
+                    Cart Products
+                </a>
+                <a href="#"
+                    class="sidebar-item block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white opacity-0">
+                    Top Rated
+                </a>
+                <a href="./messages.html"
+                    class="sidebar-item block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white opacity-0">
+                    Messages
+                </a>
+                <a href="./report.html"
+                    class="sidebar-item block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white opacity-0">
+                    Reports
+                </a>
+            </nav>
+            <a href="#" class="text-white flex items-center space-x-2 px-5"></a>
+
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            <span class="text-2xl font-extrabold">Money & Banking</span>
+            </a>
+            <nav>
+                <a href="./bank_link.html"
+                    class="sidebar-item block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white opacity-0">
+                    Bank Link
+                </a>
+                <a href="./payment.html"
+                    class="sidebar-item block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white opacity-0">
+                    UPI / Online
+                </a>
+                <a href="#"
+                    class="sidebar-item block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white opacity-0">
+                    Pending Transaction
+                </a>
+                <a href="#"
+                    class="sidebar-item block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white opacity-0">
+                    Transaction History
+                </a>
+                <a href="#"
+                    class="sidebar-item block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white opacity-0">
+                    CashBack
+                </a>
+                <a href="#"
+                    class="sidebar-item block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white opacity-0">
+                    Reward
+                </a>
+
+            </nav>
+
+            <a href="#" class="text-white flex items-center space-x-2 px-5"></a>
+
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            <span class="text-2xl font-extrabold">Interaction</span>
+            </a>
+            <nav>
+                <a href="./help_settings.html"
+                    class="sidebar-item block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white opacity-0">
+                    Help & Settings
+                </a>
+                <a href="#"
+                    class="sidebar-item block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white opacity-0">
+                    Staff Rating & Attendence
+                </a>
+                <a href="#"
+                    class="sidebar-item block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white opacity-0">
+                    About us
+                </a>
+                <a href="#"
+                    class="sidebar-item block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white opacity-0">
+                    Contact Us
+                </a>
+                <a href="#"
+                    class="sidebar-item block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white opacity-0">
+                    Settings
+                </a>
+                <a href="#"
+                    class="sidebar-item block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white opacity-0">
+                    Log Out
+                </a>
+            </nav>
+
+            <!-- Close button for mobile -->
+            <button id="sidebarClose" class="absolute top-0 right-0 mt-4 mr-4 text-white md:hidden">
+                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+        </div>
+
+        <!-- Main Content -->
+        <div class="flex-1 flex flex-col overflow-hidden bg-pattern">
+            <!-- Top bar -->
+            <header class="flex justify-between items-center py-4 px-6 bg-white border-b-4 border-gray-200">
+                <div class="flex items-center">
+                    <button id="sidebarToggle" class="text-gray-500 focus:outline-none lg:hidden">
+                        <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 6H20M4 12H20M4 18H11" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="flex items-center">
+                    <div class="relative">
+                        <button
+                            class="flex text-sm border-2 border-transparent rounded-full focus:outline-none focus:border-gray-300 transition duration-150 ease-in-out">
+                            <img class="h-8 w-8 rounded-full"
+                                src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                                alt="User avatar">
+                        </button>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Main content -->
+            <main class="flex-1 overflow-x-hidden overflow-y-auto bg-gray-100">
+                <div class="container mx-auto px-6">
+
+                    <div class="bg-gray-100 min-h-screen flex items-center justify-center p-4">
+                      
+                       <!--going on-->
+                       
+                       <div id="bank-link-form" class="bg-white p-8 rounded-lg shadow-md w-full max-w-md relative z-10">
+                           <h1 class="text-2xl font-bold mb-6 text-center text-blue-600">Link Your Bank Account</h1>
+                           <form id="linkBankForm" class="space-y-4">
+                               <div>
+                                   <label for="bankName" class="block text-sm font-medium text-gray-700">Bank Name</label>
+                                   <select id="bankName" name="bankName" required class="mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm rounded-md">
+                                       <option value="">Select your bank</option>
+                                       <option value="bank1">Bank of America</option>
+                                       <option value="bank2">Chase</option>
+                                       <option value="bank3">Wells Fargo</option>
+                                       <option value="bank4">Citibank</option>
+                                   </select>
+                               </div>
+                               <div>
+                                   <label for="accountNumber" class="block text-sm font-medium text-gray-700">Account Number</label>
+                                   <input type="text" id="accountNumber" name="accountNumber" required pattern="\d{10,12}" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm" placeholder="Enter 10-12 digit number">
+                               </div>
+                               <div>
+                                   <label for="routingNumber" class="block text-sm font-medium text-gray-700">Routing Number</label>
+                                   <input type="text" id="routingNumber" name="routingNumber" required pattern="\d{9}" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm" placeholder="Enter 9 digit number">
+                               </div>
+                               <div>
+                                   <label for="accountType" class="block text-sm font-medium text-gray-700">Account Type</label>
+                                   <select id="accountType" name="accountType" required class="mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm rounded-md">
+                                       <option value="">Select account type</option>
+                                       <option value="checking">Checking</option>
+                                       <option value="savings">Savings</option>
+                                   </select>
+                               </div>
+                               <div>
+                                   <label for="username" class="block text-sm font-medium text-gray-700">Online Banking Username</label>
+                                   <input type="text" id="username" name="username" required class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm" placeholder="Enter your username">
+                               </div>
+                               <div>
+                                   <label for="password" class="block text-sm font-medium text-gray-700">Online Banking Password</label>
+                                   <input type="password" id="password" name="password" required class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm" placeholder="Enter your password">
+                               </div>
+                               <div class="flex items-center">
+                                   <input id="terms" name="terms" type="checkbox" required class="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded">
+                                   <label for="terms" class="ml-2 block text-sm text-gray-900">
+                                       I agree to the <a href="#" class="text-blue-600 hover:underline">terms and conditions</a>
+                                   </label>
+                               </div>
+                               <button type="submit" id="submitButton" class="w-full flex items-center justify-center px-6 py-3 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition duration-150 ease-in-out">
+                                   Link Bank Account
+                               </button>
+                           </form>
+                           <div id="linkStatus" class="mt-4 text-center hidden"></div>
+                       </div>
+                   
+                       <script>
+                           document.addEventListener('DOMContentLoaded', () => {
+                               const form = document.getElementById('linkBankForm');
+                               const submitButton = document.getElementById('submitButton');
+                               const linkStatus = document.getElementById('linkStatus');
+                               const bankLinkForm = document.getElementById('bank-link-form');
+                               const animatedBackground = document.getElementById('animated-background');
+                   
+                               // Create animated background
+                               for (let i = 0; i < 100; i++) {
+                                   const dot = document.createElement('div');
+                                   dot.classList.add('dot');
+                                   animatedBackground.appendChild(dot);
+                               }
+                   
+                               // Animate background dots
+                               gsap.to('.dot', {
+                                   duration: 20,
+                                   y: '100vh',
+                                   ease: 'none',
+                                   repeat: -1,
+                                   stagger: {
+                                       amount: 20,
+                                       grid: 'auto',
+                                       from: 'random'
+                                   }
+                               });
+                   
+                               // Animate form appearance
+                               gsap.from(bankLinkForm, { duration: 0.5, opacity: 0, y: -50, ease: 'power2.out' });
+                   
+                               // Animate form fields
+                               gsap.from('form > div', { 
+                                   duration: 0.5, 
+                                   opacity: 0, 
+                                   y: 20, 
+                                   stagger: 0.1, 
+                                   ease: 'power2.out',
+                                   delay: 0.5
+                               });
+                   
+                               form.addEventListener('submit', (e) => {
+                                   e.preventDefault();
+                                   
+                                   // Basic form validation
+                                   const inputs = form.querySelectorAll('input, select');
+                                   let isValid = true;
+                                   inputs.forEach(input => {
+                                       if (!input.checkValidity()) {
+                                           input.classList.add('border-red-500');
+                                           isValid = false;
+                                       } else {
+                                           input.classList.remove('border-red-500');
+                                       }
+                                   });
+                   
+                                   if (!isValid) {
+                                       gsap.to(form, { duration: 0.1, x: -10, yoyo: true, repeat: 3 });
+                                       return;
+                                   }
+                   
+                                   // Disable submit button and show loading state
+                                   submitButton.disabled = true;
+                                   submitButton.innerHTML = '<svg class="animate-spin h-5 w-5 mr-3" viewBox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path></svg>Linking...';
+                   
+                                   // Simulate bank linking process
+                                   setTimeout(() => {
+                                       submitButton.disabled = false;
+                                       submitButton.innerHTML = 'Link Bank Account';
+                   
+                                       linkStatus.classList.remove('hidden');
+                                       linkStatus.textContent = 'Bank account linked successfully!';
+                                       linkStatus.classList.add('text-green-600');
+                   
+                                       // Animate success message
+                                       gsap.from(linkStatus, { duration: 0.5, opacity: 0, y: 20, ease: 'power2.out' });
+                   
+                                       // Reset form
+                                       form.reset();
+                                   }, 2000);
+                               });
+                   
+                               // Add hover animation to submit button
+                               submitButton.addEventListener('mouseenter', () => {
+                                   gsap.to(submitButton, { duration: 0.3, scale: 1.05, ease: 'power1.out' });
+                               });
+                   
+                               submitButton.addEventListener('mouseleave', () => {
+                                   gsap.to(submitButton, { duration: 0.3, scale: 1, ease: 'power1.out' });
+                               });
+                           });
+                       </script>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <script src="./app.js"></script>
+    <script src="./sidebar.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkStore - Products</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./animated_sidebar.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+</head>
+
+<body class="bg-gray-100">
+    <div class="flex h-screen overflow-hidden">
+        <!-- Sidebar -->
+        <div id="sidebar"
+            class="bg-sidebar-pattern text-white w-64 space-y-6 py-7 px-2 absolute inset-y-0 left-0 transform -translate-x-full md:relative md:translate-x-0 transition duration-200 ease-in-out z-20 overflow-y-auto">
+            <a href="#" class="text-white flex items-center space-x-2 px-4">
+                <span class="text-2xl font-extrabold">SkStore</span>
+            </a>
+
+            <nav>
+                <a href="./animated_sidebar.html"
+                    class="sidebar-item block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white opacity-0">
+                    Home
+                </a>
+                <a href="./card2.html"
+                    class="sidebar-item block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white opacity-0">
+                    Products
+                </a>
+                <a href="./category.html"
+                    class="sidebar-item block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white opacity-0">
+                    Category
+                </a>
+                <a href="./apple-store.html"
+                    class="sidebar-item block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white opacity-0">
+                    Store
+                </a>
+                <a href="#"
+                    class="sidebar-item block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white opacity-0">
+                    Cart Products
+                </a>
+                <a href="#"
+                    class="sidebar-item block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white opacity-0">
+                    Top Rated
+                </a>
+                <a href="./messages.html"
+                    class="sidebar-item block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white opacity-0">
+                    Messages
+                </a>
+                <a href="./report.html"
+                    class="sidebar-item block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white opacity-0">
+                    Reports
+                </a>
+            </nav>
+            <a href="#" class="text-white flex items-center space-x-2 px-5"></a>
+
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            <span class="text-2xl font-extrabold">Money & Banking</span>
+            </a>
+            <nav>
+                <a href="./bank_link.html"
+                    class="sidebar-item block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white opacity-0">
+                    Bank Link
+                </a>
+                <a href="./payment.html"
+                    class="sidebar-item block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white opacity-0">
+                    UPI / Online
+                </a>
+                <a href="#"
+                    class="sidebar-item block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white opacity-0">
+                    Pending Transaction
+                </a>
+                <a href="#"
+                    class="sidebar-item block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white opacity-0">
+                    Transaction History
+                </a>
+                <a href="#"
+                    class="sidebar-item block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white opacity-0">
+                    CashBack
+                </a>
+                <a href="#"
+                    class="sidebar-item block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white opacity-0">
+                    Reward
+                </a>
+
+            </nav>
+
+            <a href="#" class="text-white flex items-center space-x-2 px-5"></a>
+
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            <span class="text-2xl font-extrabold">Interaction</span>
+            </a>
+            <nav>
+                <a href="./help_settings.html"
+                    class="sidebar-item block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white opacity-0">
+                    Help & Settings
+                </a>
+                <a href="#"
+                    class="sidebar-item block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white opacity-0">
+                    Staff Rating & Attendence
+                </a>
+                <a href="#"
+                    class="sidebar-item block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white opacity-0">
+                    About us
+                </a>
+                <a href="#"
+                    class="sidebar-item block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white opacity-0">
+                    Contact Us
+                </a>
+                <a href="#"
+                    class="sidebar-item block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white opacity-0">
+                    Settings
+                </a>
+                <a href="#"
+                    class="sidebar-item block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white opacity-0">
+                    Log Out
+                </a>
+            </nav>
+
+            <!-- Close button for mobile -->
+            <button id="sidebarClose" class="absolute top-0 right-0 mt-4 mr-4 text-white md:hidden">
+                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+        </div>
+
+        <!-- Main Content -->
+        <div class="flex-1 flex flex-col overflow-hidden bg-pattern">
+            <!-- Top bar -->
+            <header class="flex justify-between items-center py-4 px-6 bg-white border-b-4 border-gray-200">
+                <div class="flex items-center">
+                    <button id="sidebarToggle" class="text-gray-500 focus:outline-none lg:hidden">
+                        <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 6H20M4 12H20M4 18H11" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="flex items-center">
+                    <div class="relative">
+                        <button
+                            class="flex text-sm border-2 border-transparent rounded-full focus:outline-none focus:border-gray-300 transition duration-150 ease-in-out">
+                            <img class="h-8 w-8 rounded-full"
+                                src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                                alt="User avatar">
+                        </button>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Main content -->
+            <main class="flex-1 overflow-x-hidden overflow-y-auto bg-gray-100">
+                <div class="bg-gray-100 font-sans">
+                    <div class="container mx-auto px-4 py-8 max-w-4xl">
+                        <header class="bg-white rounded-lg shadow-md p-6 mb-8">
+                            <h1 class="text-3xl font-bold text-gray-800 mb-4">Help & Settings</h1>
+                            <nav class="flex space-x-4">
+                                <button id="helpBtn" class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 transition duration-300 active">Help</button>
+                                <button id="settingsBtn" class="bg-gray-300 text-gray-800 px-4 py-2 rounded-md hover:bg-gray-400 transition duration-300">Settings</button>
+                            </nav>
+                        </header>
+                        <main>
+                            <section id="helpSection" class="bg-white rounded-lg shadow-md p-6 mb-8">
+                                <h2 class="text-2xl font-semibold text-gray-800 mb-4">Frequently Asked Questions</h2>
+                                <div class="space-y-4">
+                                    <div class="accordion-item border-b border-gray-200 pb-4">
+                                        <h3 class="text-lg font-medium text-blue-600 cursor-pointer">How do I track my order?</h3>
+                                        <div class="accordion-content hidden mt-2">
+                                            <p class="text-gray-600">You can track your order by logging into your account and visiting the "Order History" page. There, you'll find tracking information for all your recent orders.</p>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item border-b border-gray-200 pb-4">
+                                        <h3 class="text-lg font-medium text-blue-600 cursor-pointer">What is your return policy?</h3>
+                                        <div class="accordion-content hidden mt-2">
+                                            <p class="text-gray-600">We offer a 30-day return policy for most items. Please ensure the item is unused and in its original packaging. Contact our customer support team to initiate a return.</p>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item border-b border-gray-200 pb-4">
+                                        <h3 class="text-lg font-medium text-blue-600 cursor-pointer">How can I change my password?</h3>
+                                        <div class="accordion-content hidden mt-2">
+                                            <p class="text-gray-600">To change your password, go to the "Account Settings" page and click on the "Change Password" button. Follow the prompts to set a new password.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h2 class="text-2xl font-semibold text-gray-800 mt-8 mb-4">Contact Us</h2>
+                                <form id="contactForm" class="space-y-4">
+                                    <input type="text" placeholder="Your Name" required class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                    <input type="email" placeholder="Your Email" required class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                    <textarea placeholder="Your Message" required class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 h-32"></textarea>
+                                    <button type="submit" class="bg-blue-500 text-white px-6 py-2 rounded-md hover:bg-blue-600 transition duration-300">Send Message</button>
+                                </form>
+                            </section>
+                            <section id="settingsSection" class="bg-white rounded-lg shadow-md p-6 mb-8 hidden">
+                                <h2 class="text-2xl font-semibold text-gray-800 mb-4">Account Settings</h2>
+                                <form id="settingsForm" class="space-y-4">
+                                    <div class="flex items-center justify-between">
+                                        <label for="emailNotifications" class="text-gray-700">Email Notifications</label>
+                                        <input type="checkbox" id="emailNotifications" class="form-checkbox h-5 w-5 text-blue-600" checked>
+                                    </div>
+                                    <div class="flex items-center justify-between">
+                                        <label for="twoFactorAuth" class="text-gray-700">Two-Factor Authentication</label>
+                                        <input type="checkbox" id="twoFactorAuth" class="form-checkbox h-5 w-5 text-blue-600">
+                                    </div>
+                                    <div class="flex items-center justify-between">
+                                        <label for="twoFactorAuth" class="text-gray-700">Notification Via SMS</label>
+                                        <input type="checkbox" id="twoFactorAuth" class="form-checkbox h-5 w-5 text-blue-600">
+                                    </div>
+                                    <div class="flex items-center justify-between">
+                                        <label for="language" class="text-gray-700">Language</label>
+                                        <select id="language" class="form-select w-1/2 px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                            <option value="en">English</option>
+                                            <option value="es">Español</option>
+                                            <option value="fr">Français</option>
+                                            <option value="hi">Hindi</option>
+                                        </select>
+                                    </div>
+                                    <button type="submit" class="bg-blue-500 text-white px-6 py-2 rounded-md hover:bg-blue-600 transition duration-300">Save Settings</button>
+                                </form>
+                            </section>
+                        </main>
+                    </div>
+                </script>
+            </div>
+        </div>
+    </main>
+</div>
+</div>
+
+<script src="./settings.js"></script>
+    <script src="./app.js"></script>
+</body>
+
+</html>
